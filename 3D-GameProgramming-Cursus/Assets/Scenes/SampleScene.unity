@@ -548,6 +548,7 @@ GameObject:
   - component: {fileID: 2074540469}
   - component: {fileID: 2074540468}
   - component: {fileID: 2074540472}
+  - component: {fileID: 2074540473}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -645,3 +646,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 704898724}
   Speed: 50
+--- !u!114 &2074540473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074540467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 902c910625695a049a5e5f17aa8eecde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  Speed: 60
