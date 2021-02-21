@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 536654156}
   - component: {fileID: 536654160}
   - component: {fileID: 536654161}
+  - component: {fileID: 536654162}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -330,6 +331,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &536654162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536654155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e094f73175b644d9d23de26c0d0d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 536654155}
 --- !u!1 &704898720
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +359,7 @@ GameObject:
   - component: {fileID: 704898725}
   - component: {fileID: 704898726}
   - component: {fileID: 704898727}
+  - component: {fileID: 704898728}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -625,6 +640,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &704898728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704898720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e094f73175b644d9d23de26c0d0d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 704898720}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,7 +749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aed85849673cc7045b64d6baa963f462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 704898720}
 --- !u!1 &1213906125
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,6 +764,7 @@ GameObject:
   - component: {fileID: 1213906128}
   - component: {fileID: 1213906127}
   - component: {fileID: 1213906126}
+  - component: {fileID: 1213906133}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -1016,6 +1044,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1213906133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213906125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e094f73175b644d9d23de26c0d0d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1213906125}
 --- !u!1 &1338202320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1248,7 @@ GameObject:
   - component: {fileID: 1944655780}
   - component: {fileID: 1944655779}
   - component: {fileID: 1944655778}
+  - component: {fileID: 1944655785}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -1486,6 +1528,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944655785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944655777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e094f73175b644d9d23de26c0d0d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1944655777}
 --- !u!1 &2074540467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,6 +1681,7 @@ GameObject:
   - component: {fileID: 2083859527}
   - component: {fileID: 2083859526}
   - component: {fileID: 2083859525}
+  - component: {fileID: 2083859532}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -1905,3 +1961,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2083859532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083859524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e094f73175b644d9d23de26c0d0d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2083859524}
