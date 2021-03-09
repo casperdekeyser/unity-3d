@@ -1,38 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Fly : MonoBehaviour
 {
-    [SerializeField] float thrustForce = 10f;
-    [SerializeField] float steerForce = 10f;
-
+    [SerializeField]
+    public float boostForce;
+    public float steerForce;
+    
+    Transform tranform;
     Rigidbody rb;
-    bool thrust = false;
+
+    bool boost;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        tranform = GetComponent<Transform>();
         rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float tilt = Input.GetAxis("Horizontal");
-        thrust = Input.GetKey(KeyCode.Space);
+        // Steering
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
+        transform.Rotate(h * steerForce/10, 0, 0);
 
-        if(!Mathf.Approximately(tilt, 0f))
+        
+        // Fly up
+        boost = CrossPlatformInputManager.GetButton("Jump");
+        if (boost)
         {
-            rb.freezeRotation = true;
-            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, 0f, steerForce * Time.deltaTime));
+            rb.AddRelativeForce(0, boostForce, 0);
         }
-
-        rb.freezeRotation = false;
-    }
-
-    private void FixedUpdate()
-    {
-        if (thrust) rb.AddRelativeForce(Vector3.up * thrustForce * Time.deltaTime);
     }
 }
