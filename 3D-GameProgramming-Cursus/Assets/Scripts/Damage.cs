@@ -43,7 +43,8 @@ public class Damage : MonoBehaviour {
 			if (this.tag == "PlayerBullet" && collision.gameObject.tag == "Player")	// if the player got hit with it's own bullets, ignore it
 				return;
 		
-			if (collision.gameObject.GetComponent<Health> () != null) {	// if the hit object has the Health script on it, deal damage
+			if (collision.gameObject.GetComponent<Health> () != null) { // if the hit object has the Health script on it, deal damage
+				Debug.LogError("Object got hit");
 				collision.gameObject.GetComponent<Health> ().ApplyDamage (damageAmount);
 			
 				if (destroySelfOnImpact) {
