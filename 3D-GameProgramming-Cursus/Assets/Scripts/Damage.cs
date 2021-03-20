@@ -44,7 +44,7 @@ public class Damage : MonoBehaviour {
 				return;
 		
 			if (collision.gameObject.GetComponent<Health> () != null) { // if the hit object has the Health script on it, deal damage
-				Debug.LogError("Object got hit");
+				Debug.Log("Collision with " + collision.gameObject.name);
 				collision.gameObject.GetComponent<Health> ().ApplyDamage (damageAmount);
 			
 				if (destroySelfOnImpact) {
