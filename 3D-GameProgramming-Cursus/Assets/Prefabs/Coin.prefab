@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5813428033587132311}
   - component: {fileID: 5813428033587132309}
   - component: {fileID: 5813428033587132308}
-  - component: {fileID: 5813428033587132310}
+  - component: {fileID: 44382455584853981}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 180
---- !u!114 &5813428033587132310
+--- !u!114 &44382455584853981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,6 +136,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5813428033829452155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cefb24cf1769f94468b352c18cbea60c, type: 3}
+  m_Script: {fileID: 11500000, guid: 46293e1a13d69e744be1e5d3de674c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
