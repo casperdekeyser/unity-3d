@@ -11,8 +11,6 @@ public class MyGameManager2 : MonoBehaviour
     public GameObject GameOverCanvas;
     public GameStates GameState = GameStates.Playing;
 
-    public BoxCollider PortalToNexLevel;
-
     private Health healthOfPlayer;
 
     // Start is called before the first frame update

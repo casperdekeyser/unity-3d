@@ -45,7 +45,7 @@ public class Damage : MonoBehaviour {
 		
 			if (collision.gameObject.GetComponent<Health> () != null) { // if the hit object has the Health script on it, deal damage
 				Debug.Log($"Rocket hit {this.name}!");
-				if(CoinPickup.Score < 0)
+				if(CoinPickup.Score > 0)
 					CoinPickup.Score--;
 				collision.gameObject.GetComponent<Health> ().ApplyDamage (damageAmount);
 			
